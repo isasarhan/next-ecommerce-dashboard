@@ -1,0 +1,58 @@
+.dahsboardWrapper .sectionTitle {
+    width: 100%;
+    background: white;
+    padding: 14px 20px;
+    margin: 0px 2px 20px 2px;
+    border-radius: 5px;
+}
+
+.dashboardBoxWrapper {
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.BoxWrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.BoxWrapper .box {
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    background: #31614b;
+    border-radius: 12px;
+    position: relative;
+}
+
+
+.BoxWrapper .box .icon svg {
+    color: white;
+}
+
+.BoxWrapper .box .title {
+    font-size: 18px;
+    color: white;
+}
+
+.BoxWrapper .box .icon {
+
+    font-size: 30px;
+}
+
+.BoxWrapper .box .badgeWrapper .badge {
+    background: #1E65E7;
+    padding: 8px;
+}
+
+.BoxWrapper .box .badgeWrapper {
+    padding-top: 40px;
+}
+
+.BoxWrapper .box p {
+    opacity: 0.8;
+}
+.BoxWrapper .box .nb {
+    font-size: 33px;
+    color: white;
+}

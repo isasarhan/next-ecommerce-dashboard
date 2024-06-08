@@ -1,0 +1,56 @@
+.dashboardBoxWrapper .dashboardBox {
+    width: 48%;
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.dashboardBoxWrapper .dashboardBox .title {
+    font-size: 18px;
+    color: white;
+    z-index: 100;
+}
+
+.dashboardBoxWrapper .dashboardBox .icon {
+    color: white;
+    background: #24A367;
+    height: 55px;
+    opacity: 0.8;
+    position: absolute;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 18px;
+    right: 20px;
+    border-radius: 10px;
+    font-size: 35px;
+
+}
+
+.dashboardBoxWrapper .dashboardBox .badgeWrapper {
+    z-index: 100;
+
+}
+.dashboardBoxWrapper .dashboardBox .badgeWrapper .badge {
+    background: #31614b;
+    padding: 8px;
+    z-index: 100;
+    
+}
+
+.dashboardBoxWrapper .dashboardBox .nb {
+    font-size: 33px;
+    z-index: 100;
+    position: relative;
+    color: white;
+}
+
+.dashboardBoxWrapper .dashboardBox .growth {
+    position: absolute;
+    font-size: 180px;
+    opacity: 1;
+    height: auto;
+    z-index: 0;
+    bottom: 0;
+}

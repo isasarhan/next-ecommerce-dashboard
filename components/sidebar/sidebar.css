@@ -1,0 +1,127 @@
+
+.sidebarWrapper .sidebar {
+    height: 100vh;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: calc(100% - 75px);
+    width: inherit;
+}
+
+.sidebarWrapper .sidebar .title {
+    font-size: 15px;
+}
+
+.sidebarWrapper .sidebar ul .submenuWrapper .submenu {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebarWrapper .sidebar ul .submenuWrapper.expand .submenu {
+    height: auto;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebarWrapper .sidebar ul .submenuWrapper.collapse .submenu {
+    height: 0;
+    opacity: 0;
+}
+
+.sidebarWrapper .sidebar .submenu li:hover {
+    border-left: 2px solid #575859;
+}
+
+.sidebarWrapper .sidebar .submenu li {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 15px;
+    margin: 0%;
+    cursor: pointer;
+    margin-left: 5%;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebarWrapper .sidebar .submenu li:hover {
+    color: #79583D;
+}
+
+
+.sidebarWrapper .sidebar li {
+    margin: 10px 0px;
+}
+
+.sidebarWrapper .sidebar li button svg {
+    font-size: 19px;
+}
+
+.sidebarWrapper .sidebar li button {
+    justify-content: start;
+    padding: 15px 20px;
+    color: #575859;
+}
+
+.sidebarWrapper .sidebar li button .arrow {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebarWrapper .sidebar li button.active {
+    color: #79583D !important;
+}
+
+.sidebarWrapper .sidebar li button.active .arrow {
+    transform: rotate(90deg);
+}
+
+.sidebarWrapper .sidebar .logoutWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    cursor: pointer;
+    margin: auto;
+    border-radius: 20px;
+    height: 150px;
+    background: #edebe9;
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebarWrapper .sidebar .logoutWrapper::before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    top: -10px;
+    right: -10px;
+    background: #d7d3cf;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.sidebarWrapper .sidebar .logoutWrapper::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    left: 25%;
+    background: #d7d3cf;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.sidebarWrapper .sidebar .logoutWrapper button {
+    z-index: 100;
+}
+@media (max-width:768px) {
+    .sidebarWrapper .sidebar ul{
+        padding: 0% !important;
+        margin: 0% !important;
+    }
+     .sidebar {
+
+        width: inherit !important;
+    }
+}
