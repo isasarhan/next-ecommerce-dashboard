@@ -1,0 +1,29 @@
+.productSection{
+    height: 90VH;
+}
+.productSection input, .productSection button {
+    font-size: 20px;
+}
+.productSection input, .productSection button svg{
+    font-size: 27px;
+}
+.productSection input, .productSection textarea{
+    background: #FAFAFA;
+}
+.uploadImage {
+    width: 100%;
+    height: 250px; 
+    background: white;
+    border: 4px dashed #d7d3d3; 
+
+}
+.featuredImgWrapper{
+    
+    width: 100%;
+    height: max-content;
+}
+.featuredImgWrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

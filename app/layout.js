@@ -3,35 +3,32 @@ import Navbar from "@/components/navbar/navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import Sidebar from "@/components/sidebar/sidebar";
-import { createContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
+import { ThemeContext, ThemeProvider } from "@/context/ThemeContext";
+import { Providers } from "@/context/Providers";
 
-const MyContext = createContext()
 
 export default function RootLayout({ children }) {
-  const [isToggleMenu, setIsToggleMenu] = useState(false)
-  const values = {
-    isToggleMenu, setIsToggleMenu
-  }
-  useEffect(()=>{
-    console.log(isToggleMenu);
-  }, [isToggleMenu])
+
+ 
   return (
     <html>
-      <MyContext.Provider value={values}>
-        <body >
-          <Navbar />
-          <div className="main d-flex " >
-            <div className={`sidebarWrapper p-0 m-0 ${isToggleMenu ? 'toggle' : ''}`}>
-              <Sidebar />
+      <Providers>
+
+          <body >
+            <Navbar />
+            <div className="main d-flex " >
+              
+                <Sidebar />
+              
+              <div className="content bg-main">
+                {children}
+              </div>
             </div>
-            <div className="content bg-main">
-              {children}
-            </div>
-          </div>
-        </body>
-      </MyContext.Provider>
+          </body>
+      </Providers>
+       
     </html>
   );
 }
 
-export { MyContext }

@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <section className="dahsboardWrapper">
       <div className='sectionTitle d-flex align-items-center'>
-        <h4>Ecommerce</h4>
+        <h4 className='m-0'>Ecommerce</h4>
         <div className='ms-auto '>
           <nav
             style={{ "--bs-breadcrumb-divider": "'~'" }}

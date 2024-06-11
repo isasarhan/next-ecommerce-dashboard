@@ -1,11 +1,29 @@
+.sidebarWrapper.toggle {
+    width: 0%;
+    flex: 0 0 0%;
+    overflow: hidden;
+}
+
+.sidebarWrapper {
+    width: 20%;
+    transition: all 0.3s ease-in-out, background-color 0.3s ease-in-out !important;
+
+    overflow: visible;
+    flex: 0 0 20%;
+    top: 75px;
+    position: relative;
+    background-color: inherit;
+}
 
 .sidebarWrapper .sidebar {
+    background-color: inherit;
     height: 100vh;
     position: fixed;
     overflow-y: scroll;
     overflow-x: hidden;
     max-height: calc(100% - 75px);
     width: inherit;
+
 }
 
 .sidebarWrapper .sidebar .title {
@@ -40,7 +58,6 @@
     margin: 0%;
     cursor: pointer;
     margin-left: 5%;
-    transition: all 0.3s ease-in-out;
 }
 
 .sidebarWrapper .sidebar .submenu li:hover {
@@ -60,6 +77,7 @@
     justify-content: start;
     padding: 15px 20px;
     color: #575859;
+
 }
 
 .sidebarWrapper .sidebar li button .arrow {
@@ -115,13 +133,30 @@
 .sidebarWrapper .sidebar .logoutWrapper button {
     z-index: 100;
 }
+
 @media (max-width:768px) {
-    .sidebarWrapper .sidebar ul{
+    .sidebarWrapper .sidebar ul {
         padding: 0% !important;
         margin: 0% !important;
     }
-     .sidebar {
+
+    .sidebar {
 
         width: inherit !important;
+    }
+}
+
+@media (max-width:768px) {
+
+    .sidebarWrapper.toggle {
+        width: 0%;
+        flex: 0 0 0%;
+    }
+
+    .sidebarWrapper {
+        width: 100%;
+        top: 75px;
+        position: relative;
+        transition: all 0.3s ease-in-out;
     }
 }

@@ -1,0 +1,79 @@
+.content {
+    background: white
+}
+
+.loginSection {
+    height: 90vh;
+}
+
+.loginSection .icon {
+    font-size: 55px;
+}
+
+.loginSection .card {
+    width: 33%;
+    background: #ebe9e9;
+
+}
+
+form .selectWrapper {
+    width: 100%;
+    position: relative;
+}
+
+form .inputWrapper {
+    width: 100%;
+    position: relative;
+}
+
+form .inputWrapper .icon {
+    position: absolute;
+    font-size: 24px;
+    left: 10px;
+    opacity: 0.6;
+    top: 42%;
+}
+
+.loginSection input {
+    width: 100%;
+    padding-left: 45px;
+    height: 45px;
+}
+
+.loginSection .OrSeperator {
+    margin-bottom: 20px;
+}
+.loginSection .OrSeperator .or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43px;
+    border: 1px solid #b3acac9d;
+    border-radius: 50%;
+    width: 43px;
+}
+
+.loginSection .OrSeperator .line {
+    content: "";
+    width: 40%;
+    height: 2px;
+    background: #b3acac9d;
+}
+
+.loginSection select {
+    width: 100%;
+    padding-left: 45px;
+    height: 45px;
+}
+
+.loginSection .btn {
+    padding: 10px 20px !important;
+}
+
+.googleBtn .googleIcon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    top: 7px;
+}

@@ -11,13 +11,15 @@ import { FiLogOut } from "react-icons/fi";
 import { FaShieldAlt } from "react-icons/fa";
 
 import './navbar.css'
-import { MyContext } from '@/app/layout';
+import { ThemeContext } from '@/context/ThemeContext';
+import { SidebarContext } from '@/context/SidebarContext';
 const Navbar = () => {
     const [openDropDown, setOpenDropdown] = useState(false)
     const toggleDropDown = () => {
         setOpenDropdown(!openDropDown)
     }
-    const context = useContext(MyContext)
+    const { theme, toggleTheme } = useContext(ThemeContext);
+    const context = useContext(SidebarContext)
     return (
         <header>
             <div className="container-fluid">
@@ -28,24 +30,23 @@ const Navbar = () => {
                     <div className="col-sm-5 d-flex justify-content-start align-items-center">
 
                         <button className='btn rounded-circle p-2' onClick={() => context.setIsToggleMenu(!context.isToggleMenu)}>
-                            <IoMenu /> </button>
+                           {context.isToggleMenu? <IoMenu /> : <MdOutlineMenuOpen/>} </button>
                         <div className="searchField position-relative">
                             <input type="text" placeholder='quick search ...' />
                             <span className='icon'><IoSearchSharp /></span>
                         </div>
                     </div>
                     <div className="col-sm-5 d-flex justify-content-end align-items-center">
-                        <button className='btn rounded-circle'><IoSunny />
-                            <span class="badge bg-danger">21</span>
+                        <button className='btn rounded-circle' onClick={toggleTheme}><IoSunny />
                         </button>
                         <button className='btn rounded-circle'><FaGlobe />
-                            <span class="badge bg-danger">21</span>
+                            <span className="badge bg-danger">21</span>
                         </button>
-                        <button className='btn rounded-circle'><FaEnvelope />
-                            <span class="badge bg-danger">21</span>
+                        <button className='btn rounded-circle' ><FaEnvelope />
+                            <span className="badge bg-danger">21</span>
                         </button>
                         <button className='btn rounded-circle'><FaBell />
-                            <span class="badge bg-danger">21</span>
+                            <span className="badge bg-danger">21</span>
                         </button>
                         <div className="dropdown" onClick={toggleDropDown}>
                             <div className="userInfo d-flex align-items-center cursor dropdown-toggle">

@@ -1,10 +1,12 @@
 header {
     width: 100%;
-    background: white;
     position: fixed;
     z-index: 1000;
+    background-color: inherit;
+    transition: all 0.3s ease-in-out;
 }
 header .logo {
+    padding: 2px;
     width: 175px;
 }
 
