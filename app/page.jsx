@@ -6,7 +6,7 @@ import { FaShoppingBag } from "react-icons/fa";
 import { GiStarsStack } from "react-icons/gi";
 import { HiDotsHorizontal } from "react-icons/hi";
 import { IconButton } from '@mui/material';
-import DataTable from '@/components/table/table';
+import DataTable from '@/components/muitable/table';
 
 export default function Home() {
   return (

@@ -55,22 +55,34 @@ const Sidebar = () => {
                         </Button>
                         <div className={`submenuWrapper ${activeTab === 4 && isToggleMenu ? 'expand' : 'collapse'}`}>
                             <ul className='submenu'>
-                                <li><Link href={'/products'}>Product List</Link></li>
-                                <li><Link href={'/products/add'}>Upload Product</Link></li>
+                                <li><Link href={'/products'} className='w-100'>Product List</Link></li>
+                                <li><Link href={'/products/add'} className='w-100'>Upload Product</Link></li>
                             </ul>
                         </div>
                     </li>
                     <li>
                         <Button className={`w-100 text-start ${activeTab === 5 && isToggleMenu ? 'active' : ''}`} onClick={() => toggleMenu(5)}>
-                            <span className='icon me-3'><FaFileInvoice /></span> Blog<span className='arrow'><FaAngleRight /></span>
+                            <span className='icon me-3'><AiFillProduct size={26} /></span> Products Categories<span className='arrow'><FaAngleRight /></span>
                         </Button>
                         <div className={`submenuWrapper ${activeTab === 5 && isToggleMenu ? 'expand' : 'collapse'}`}>
+                            <ul className='submenu'>
+                                <li><Link href={'/categories'}>Category List</Link></li>
+                                <li><Link href={'/categories/add'}>Upload Category</Link></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <Button className={`w-100 text-start ${activeTab === 6 && isToggleMenu ? 'active' : ''}`} onClick={() => toggleMenu(6)}>
+                            <span className='icon me-3'><FaFileInvoice /></span> Blog<span className='arrow'><FaAngleRight /></span>
+                        </Button>
+                        <div className={`submenuWrapper ${activeTab === 6 && isToggleMenu ? 'expand' : 'collapse'}`}>
                             <ul className='submenu'>
                                 <li><Link href={'#'}>Blog List</Link></li>
                                 <li><Link href={'#'}>Upload Blog</Link></li>
                             </ul>
                         </div>
                     </li>
+
                     <li>
                         <Link href={'/'}>
 

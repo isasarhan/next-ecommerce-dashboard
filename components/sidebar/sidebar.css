@@ -25,7 +25,9 @@
     width: inherit;
 
 }
-
+body.dark .sidebarWrapper .sidebar li button{
+    color: white !important;
+}
 .sidebarWrapper .sidebar .title {
     font-size: 15px;
 }

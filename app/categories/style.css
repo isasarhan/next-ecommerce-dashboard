@@ -1,40 +1,33 @@
-.productSection {
+.productSection{
     height: 100VH;
-    margin-bottom: 30px;
 }
-
-.productSection input,
-.productSection button svg,
-.productSection button{
-    font-size: 18px;
+.productSection input, .productSection button {
+    font-size: 20px;
 }
-
-.productSection input,
-.productSection textarea{
+.productSection input, .productSection button svg{
+    font-size: 27px;
+}
+.productSection input, .productSection textarea{
     background: #FAFAFA;
 }
-
 .uploadImage {
     width: 100%;
-    height: 250px;
+    height: 250px; 
     background: white;
-    border: 4px dashed #d7d3d3;
+    border: 4px dashed #d7d3d3; 
+
 }
-
-.featuredImgWrapper,
-.categoryWrapper {
-
+.featuredImgWrapper{
+    
     width: 100%;
     height: max-content;
 }
-
-.featuredImgWrapper img {
+.featuredImgWrapper img{
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-
-.productSection .checkboxWrapper {
+.categoriesection .checkboxWrapper {
     position: relative;
     border-radius: 6px !important;
     height: 22px;
@@ -43,14 +36,13 @@
     padding: 0%;
 }
 
-.productSection .checkbox {
+.categoriesection .checkbox {
     height: 100%;
     width: 100%;
     margin: 0%;
     padding: 0%;
 
 }
-
 .tableWrapper .imgWrapper {
     height: 50px;
     width: 50px;

@@ -1,14 +1,10 @@
 'use client';
 
-import { ThemeContext, ThemeProvider } from './ThemeContext';
-import { SidebarContext, SidebarProvider } from './SidebarContext';
-import { useContext, useEffect } from 'react';
+import { ThemeProvider } from './ThemeContext';
+import { SidebarProvider } from './SidebarContext';
 
 export function Providers({ children }) {
-    const { theme } = useContext(ThemeContext);
-    const { isToggleMenu } = useContext(SidebarContext);
-
-
+ 
     return (
         <ThemeProvider>
             <SidebarProvider>{children}</SidebarProvider>
